@@ -1509,7 +1509,7 @@ div.ui-mobile-viewport {
 }
 /* Buttons and icons */
 .ui-btn {
-	font-size: 16px;
+	font-size: 5.9vw;
 	margin: .5em 0;
 	padding: .7em 5.9vm;
 	display: block;
@@ -3688,7 +3688,7 @@ fieldset.ui-controlgroup {
 /* Used by both listview and custom multiple select button */
 .ui-li-count {
 	position: absolute;
-	font-size: 12.5px;
+	font-size: 5.9vw;
 	font-weight: bold;
 	text-align: center;
 	border-width: 1px;
@@ -3858,7 +3858,7 @@ div.ui-slider:after {
 input.ui-slider-input {
 	display: block;
 	float: left;
-	font-size: 14px;
+	font-size: 5.9vw;
 	font-weight: bold;
 	margin: 0;
 	padding: 4px;
