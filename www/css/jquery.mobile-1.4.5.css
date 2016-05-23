@@ -735,7 +735,7 @@ select,
 textarea,
 button,
 .ui-btn {
-	font-size: 1em;
+	font-size: 5.9vw;
 	line-height: 1.3;
 	font-family: sans-serif /*{global-font-family}*/;
 }
@@ -818,8 +818,8 @@ label.ui-btn {
 /* Icon-only buttons */
 .ui-btn-icon-notext.ui-btn-corner-all,
 .ui-btn-icon-notext.ui-corner-all {
-	-webkit-border-radius: 1em;
-	border-radius: 1em;
+	-webkit-border-radius: 5.9vw;
+	border-radius: 5.9vm;
 }
 /* Radius clip workaround for cleaning up corner trapping */
 .ui-btn-corner-all,
@@ -862,8 +862,8 @@ label.ui-btn {
 	background-color: 					rgba(0,0,0,.3) /*{global-icon-disc}*/;
 	background-position: center center;
 	background-repeat: no-repeat;
-	-webkit-border-radius: 1em;
-	border-radius: 1em;
+	-webkit-border-radius: 5.9vm;
+	border-radius: 5.9vm;
 }
 /* Alt icons */
 .ui-alt-icon.ui-btn:after,
@@ -1409,7 +1409,7 @@ div.ui-mobile-viewport {
 	overflow: hidden;
 }
 .ui-loader-verbose h1 {
-	font-size: 1em;
+	font-size: 5.9vm;
 	margin: 0;
 	text-align: center;
 }
@@ -1442,7 +1442,7 @@ div.ui-mobile-viewport {
 .ui-bar,
 .ui-body {
 	position: relative;
-	padding: .4em 1em;
+	padding: .4em 5.9vm;
 	overflow: hidden;
 	display: block;
 	clear: both;
@@ -1455,7 +1455,7 @@ div.ui-mobile-viewport {
 .ui-bar h6 {
 	margin: 0;
 	padding: 0;
-	font-size: 1em;
+	font-size: 5.9vm;
 	display: inline-block;
 }
 .ui-header,
@@ -1470,8 +1470,8 @@ div.ui-mobile-viewport {
 }
 .ui-header .ui-title,
 .ui-footer .ui-title {
-	font-size: 1em;
-	min-height: 1.1em;
+	font-size: 5.9vm;
+	min-height: 5.9vm;
 	text-align: center;
 	display: block;
 	margin: 0 30%;
@@ -1482,13 +1482,13 @@ div.ui-mobile-viewport {
 	outline: 0 !important;
 }
 .ui-footer .ui-title {
-	margin: 0 1em;
+	margin: 0 5.9vm;
 }
 .ui-content {
 	border-width: 0;
 	overflow: visible;
 	overflow-x: hidden;
-	padding: 1em;
+	padding: 5.9vm;
 }
 /* Corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,
@@ -1511,7 +1511,7 @@ div.ui-mobile-viewport {
 .ui-btn {
 	font-size: 16px;
 	margin: .5em 0;
-	padding: .7em 1em;
+	padding: .7em 5.9vm;
 	display: block;
 	position: relative;
 	text-align: center;
@@ -2482,7 +2482,7 @@ button.ui-btn-icon-notext,
 	.ui-field-contain,
 	.ui-mobile fieldset.ui-field-contain {
 		padding: 0;
-		margin: 1em 0;
+		margin: 5.9vm 0;
 		border-bottom-width: 0;
 	}
 	.ui-field-contain:before,
@@ -2825,7 +2825,7 @@ li.ui-block-e {
 	clip: rect(1px,1px,1px,1px);
 }
 .ui-collapsible {
-	margin: 0 -1em;
+	margin: 0 -5.9vm;
 }
 .ui-collapsible-inset,
 .ui-collapsible-set {
@@ -2867,7 +2867,7 @@ li.ui-block-e {
 .ui-collapsible-content {
 	display: block;
 	margin: 0;	
-	padding: .5em 1em;
+	padding: .5em 5.9vm;
 }
 .ui-collapsible-themed-content .ui-collapsible-content {
 	border-left-width: 0;
@@ -2915,7 +2915,7 @@ li.ui-block-e {
 	border-bottom-left-radius: 0;		
 }
 .ui-collapsible-set .ui-collapsible {
-	margin: -1px -1em 0;
+	margin: -1px -5.9vm 0;
 }
 .ui-collapsible-set .ui-collapsible-inset {
 	margin: -1px 0 0;
@@ -2982,7 +2982,7 @@ fieldset.ui-controlgroup {
 }
  .ui-controlgroup-controls .ui-btn-icon-notext {
 	height: auto;
-	padding: .7em 1em;
+	padding: .7em 5.9vm;
 }
 .ui-controlgroup-vertical .ui-controlgroup-controls .ui-btn {
 	border-bottom-width: 0;
@@ -3057,10 +3057,10 @@ fieldset.ui-controlgroup {
 .ui-dialog-contain {
 	width: 92.5%;
 	max-width: 500px;
-	margin: 10% auto 1em auto;
+	margin: 10% auto 5.9vm auto;
 	padding: 0;
 	position: relative;
-	top: -1em;
+	top: -5.9vm;
 }
 .ui-dialog-contain > .ui-header, 
 .ui-dialog-contain > .ui-content, 
@@ -3078,7 +3078,7 @@ fieldset.ui-controlgroup {
 }
 .ui-dialog-contain > .ui-footer {
 	z-index: 10; 
-	padding: 0 1em; 
+	padding: 0 5.9vm; 
 	border-bottom-width: 0;
 }
 .ui-popup-open .ui-header-fixed,
@@ -3493,7 +3493,7 @@ fieldset.ui-controlgroup {
 	white-space: nowrap;
 }
 .ui-selectmenu.ui-popup {
-	min-width: 11em;
+	min-width: 15.9vm;
 }
 .ui-selectmenu .ui-dialog-contain {
 	overflow: hidden;
@@ -3556,14 +3556,14 @@ fieldset.ui-controlgroup {
 }
 .ui-content .ui-listview,
 .ui-panel-inner > .ui-listview {
-	margin: -1em;
+	margin: -5.9vm;
 }
 .ui-content .ui-listview-inset,
 .ui-panel-inner > .ui-listview-inset {
-	margin: 1em 0;
+	margin: 5.9vm 0;
 }
 .ui-collapsible-content > .ui-listview {
-	margin: -.5em -1em;
+	margin: -.5em -5.9vm;
 }
 .ui-collapsible-content > .ui-listview-inset {
 	margin: .5em 0;
@@ -3657,7 +3657,7 @@ fieldset.ui-controlgroup {
 	border-radius: inherit;	
 }
 .ui-listview > .ui-li-static {
-	padding: .7em 1em;
+	padding: .7em 5.9vm;
 }
 .ui-listview > .ui-li-divider {
 	padding: .5em 1.143em;
@@ -3719,8 +3719,8 @@ fieldset.ui-controlgroup {
 	position: absolute;
 	left: .625em;
 	top: .9em;
-	max-height: 1em;
-	max-width: 1em;
+	max-height: 5.9vm;
+	max-width: 5.9vm;
 }
 .ui-listview > li h1,
 .ui-listview > li h2,
@@ -3728,7 +3728,7 @@ fieldset.ui-controlgroup {
 .ui-listview > li h4,
 .ui-listview > li h5,
 .ui-listview > li h6 {
-	font-size: 1em;
+	font-size: 5.9vm;
 	font-weight: bold;
 	display: block;
 	margin: .45em 0;
@@ -3747,7 +3747,7 @@ fieldset.ui-controlgroup {
 }
 .ui-listview .ui-li-aside {
 	position: absolute;
-	top: 1em;
+	top: 5.9vm;
 	right: 3.333em;
 	margin: 0;
 	text-align: right;
@@ -4281,7 +4281,7 @@ textarea.ui-input-text.ui-textinput-autogrow {
 }
 .ui-flipswitch .ui-flipswitch-off {
 	padding: 1px;
-	text-indent: 1em; /* Override this to center text if you use a label other than "off" */
+	text-indent: 5.9vm; /* Override this to center text if you use a label other than "off" */
 }
 /* Override field container CSS to prevent the flipswitch from becomming full width */
 html .ui-field-contain > label + .ui-flipswitch,
@@ -4439,7 +4439,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 		padding: .4em; 
 		min-width: 30%; 
 		display: inline-block;
-		margin: -.4em 1em -.4em -.4em;
+		margin: -.4em 5.9vm -.4em -.4em;
 	}
 	/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */ 
 	.ui-table-reflow th .ui-table-cell-label-top,
@@ -4516,7 +4516,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 	z-index: 1001; /* Fixed toolbars have z-index 1000 */
 }
 .ui-panel-inner {
-	padding: 1em;
+	padding: 5.9vm;
 }
 /* Container, page and wrapper */
 .ui-panel-page-container {
