@@ -37,6 +37,11 @@ var app = {
   
 		navigator.notification.alert("Salvataggio effettuato!",function() {},"Informazione");
 	});
+	
+	$("#btnFoto").on("tap", function() {
+             
+            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
+    	});
 			
 	$("#btnInviaSchede").on("tap", function() {
 	  
