@@ -151,6 +151,14 @@ var app = {
     start: function() {
      
         
+    },
+    
+    onCameraSuccess: function(imageURI) {
+    $("#fotoAnteprima").attr("src", imageURI).css({width: "128px", height: "128px"});
+    },
+    
+    onCameraError: function(errorMessage) {
+    navigator.notification.alert(errorMessage, function() {}, "Errore");
     }
 };
  
