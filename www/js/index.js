@@ -41,6 +41,7 @@ var app = {
 	$("#btnFoto").on("tap", function() {
              
             navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
+
     	});
 			
 	$("#btnInviaSchede").on("tap", function() {
@@ -184,6 +185,14 @@ var scheda = {
         }
 		
     },
+	onCameraSuccess: function(imageURI) {
+  		$("#fotoAnteprima").attr("src", imageURI).css({width: "128px", height: "128px"});
+  		},
+  		
+  	onCameraError: function(errorMessage) {
+  	navigator.notification.alert(errorMessage, function() {}, "Errore");
+  
+	},
 	
     send: function(listaSchede, successCallback, failCallback) {
 		$.ajax({
