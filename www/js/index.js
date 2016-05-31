@@ -26,6 +26,11 @@ var app = {
      
     bind: function() {
  	document.addEventListener('deviceready', this.deviceready, false);
+    $("#btnFoto").on("tap", function() {
+             
+            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
+    });
+    
     $("#btnSalva").on("tap", function() {
   
 		scheda.data.nome = $("#txtNome").val();
