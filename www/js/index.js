@@ -37,12 +37,6 @@ var app = {
   
 		navigator.notification.alert("Salvataggio effettuato!",function() {},"Informazione");
 	});
-	
-	$("#btnFoto").on("tap", function() {
-             
-            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
-
-    	});
 			
 	$("#btnInviaSchede").on("tap", function() {
 	  
@@ -157,15 +151,6 @@ var app = {
  
 $(document).ready(function() {
     app.initialize();
-    
-    	onCameraSuccess: function(imageURI) {
-  		$("#fotoAnteprima").attr("src", imageURI).css({width: "128px", height: "128px"});
-  		},
-  		
-  	onCameraError: function(errorMessage) {
-  	navigator.notification.alert(errorMessage, function() {}, "Errore");
-  
-	},
 });
 
 var scheda = {
