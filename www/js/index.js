@@ -31,6 +31,13 @@ var app = {
             navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
     });
     
+    $("#btnFotoAnteprima").on("tap", function() {
+     
+      $("#fotoProdotto").attr("src", $("#fotoAnteprima").attr("src"));
+     
+    $.mobile.changePage($("#fotoPage"), {role: "dialog"});
+    });
+    
     $("#btnSalva").on("tap", function() {
   
 		scheda.data.nome = $("#txtNome").val();
