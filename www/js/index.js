@@ -154,7 +154,7 @@ var app = {
     },
     
     onCameraSuccess: function(imageURI) {
-    $("#fotoAnteprima").attr("src", imageURI).css({width: "128px", height: "128px"});
+    $("#fotoAnteprima").attr("src", imageURI).css({width: "1280px", height: "1280px"});
     },
     
     onCameraError: function(errorMessage) {
