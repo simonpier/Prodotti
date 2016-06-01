@@ -176,6 +176,7 @@ $(document).ready(function() {
 var scheda = {
 	
 	data: {nome: "", indirizzo: "", descrizione: "", prezzo: "0,00"},
+	photoURI: "",
 	
     save: function() {
        if (scheda.data.nome != "") {
