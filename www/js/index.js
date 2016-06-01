@@ -44,6 +44,7 @@ var app = {
 		scheda.data.indirizzo = $("#txtIndirizzo").val();
 		scheda.data.descrizione = $("#txtDescrizione").val();
 		scheda.data.prezzo = $("#txtPrezzo").val();
+		scheda.photoURI = $("#fotoAnteprima").attr("src");
   
 		scheda.save();
   
