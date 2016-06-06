@@ -28,7 +28,9 @@ var app = {
  	document.addEventListener('deviceready', this.deviceready, false);
     $("#btnFoto").on("tap", function() {
              
-            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
+            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError, {
+            	saveToPhotoAlbum: true
+            });
     });
     
     $("#btnFotoAnteprima").on("tap", function() {
