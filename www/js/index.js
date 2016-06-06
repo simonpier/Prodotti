@@ -29,7 +29,15 @@ var app = {
     $("#btnFoto").on("tap", function() {
              
             navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError, {
-            	saveToPhotoAlbum: true
+            	quality : 75,
+  		destinationType : Camera.DestinationType.DATA_URL,
+  		sourceType : Camera.PictureSourceType.CAMERA,
+  		allowEdit : true,
+  		encodingType: Camera.EncodingType.JPEG,
+  		targetWidth: 100,
+  		targetHeight: 100,
+  		popoverOptions: CameraPopoverOptions,
+  		saveToPhotoAlbum: false
             });
     });
     
