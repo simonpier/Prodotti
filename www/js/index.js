@@ -112,7 +112,7 @@ var app = {
 						$("#txtIndirizzo").val(scheda.data.indirizzo);
 						$("#txtDescrizione").val(scheda.data.descrizione);
 						$("#txtPrezzo").val(scheda.data.prezzo);
-						$("#fotoAnteprima").val(scheda.data.photoURI);
+						$("#fotoAnteprima").attr(scheda.data.photoURI);
 						$.mobile.changePage($("#scheda"));
 					});
 					
