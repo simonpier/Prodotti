@@ -44,7 +44,7 @@ var app = {
 		scheda.data.indirizzo = $("#txtIndirizzo").val();
 		scheda.data.descrizione = $("#txtDescrizione").val();
 		scheda.data.prezzo = $("#txtPrezzo").val();
-		scheda.photoURI = $("#fotoAnteprima").attr("src");
+		scheda.data.photoURI = $("#fotoAnteprima").attr("src");
   
 		scheda.save();
   
@@ -112,6 +112,7 @@ var app = {
 						$("#txtIndirizzo").val(scheda.data.indirizzo);
 						$("#txtDescrizione").val(scheda.data.descrizione);
 						$("#txtPrezzo").val(scheda.data.prezzo);
+						$("#fotoAnteprima").val(scheda.data.photoURI);
 						$.mobile.changePage($("#scheda"));
 					});
 					
