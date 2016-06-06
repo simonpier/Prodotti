@@ -28,10 +28,7 @@ var app = {
  	document.addEventListener('deviceready', this.deviceready, false);
     $("#btnFoto").on("tap", function() {
              
-            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError, {
-            	sourceType: Camera.PictureSourceType.SAVEDPHOTOALBUM,
-                mediaType: Camera.MediaType.PICTURE
-            });
+            navigator.camera.getPicture(app.onCameraSuccess, app.onCameraError);
     });
     
     $("#btnFotoAnteprima").on("tap", function() {
@@ -115,7 +112,6 @@ var app = {
 						$("#txtIndirizzo").val(scheda.data.indirizzo);
 						$("#txtDescrizione").val(scheda.data.descrizione);
 						$("#txtPrezzo").val(scheda.data.prezzo);
-						$("#fotoAnteprima").attr(scheda.data.photoURI);
 						$.mobile.changePage($("#scheda"));
 					});
 					
@@ -166,7 +162,7 @@ var app = {
     },
     
     onCameraSuccess: function(imageURI) {
-    $("#fotoAnteprima").attr("src", imageURI).css({width: "800px", height: "800px"});
+    $("#fotoAnteprima").attr("src", imageURI).css({width: "500px", height: "500px"});
     },
     
     onCameraError: function(errorMessage) {
@@ -180,7 +176,8 @@ $(document).ready(function() {
 
 var scheda = {
 	
-	data: {nome: "", indirizzo: "", descrizione: "", prezzo: "0,00", photoURI: ""},
+	data: {nome: "", indirizzo: "", descrizione: "", prezzo: "0,00"},
+	photoURI: "",
 	
     save: function() {
        if (scheda.data.nome != "") {
