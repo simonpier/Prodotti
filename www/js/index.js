@@ -44,6 +44,7 @@ var app = {
 		scheda.data.indirizzo = $("#txtIndirizzo").val();
 		scheda.data.descrizione = $("#txtDescrizione").val();
 		scheda.data.prezzo = $("#txtPrezzo").val();
+		scheda.data.quantità = $("#txtQuantità").val();
 		scheda.data.photoURI = $("#fotoAnteprima").attr("src");
   
 		scheda.save();
@@ -112,6 +113,7 @@ var app = {
 						$("#txtIndirizzo").val(scheda.data.indirizzo);
 						$("#txtDescrizione").val(scheda.data.descrizione);
 						$("#txtPrezzo").val(scheda.data.prezzo);
+						$("#txtQuantità").val(scheda.data.quantità);
 						$.mobile.changePage($("#scheda"));
 					});
 					
@@ -176,7 +178,7 @@ $(document).ready(function() {
 
 var scheda = {
 	
-	data: {nome: "", indirizzo: "", descrizione: "", prezzo: "0,00"},
+	data: {nome: "", indirizzo: "", descrizione: "", prezzo: "0,00", quantità: "0,00"},
 	photoURI: "",
 	
     save: function() {
