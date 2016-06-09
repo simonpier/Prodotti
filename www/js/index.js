@@ -114,6 +114,7 @@ var app = {
 						$("#txtDescrizione").val(scheda.data.descrizione);
 						$("#txtPrezzo").val(scheda.data.prezzo);
 						$("#txtQuantità").val(scheda.data.quantità);
+						$("#fotoAnteprima").attr(scheda.data.photoURI);
 						$.mobile.changePage($("#scheda"));
 					});
 					
