@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Prodotti</name>
+    <name>Piero's Products</name>
     <description>
-        Version 1.1
+        Version 1.2
     </description>
     <author email="simonepieri97@gmail.com" href="http://phonegap.com">
         PhoneGap Team
